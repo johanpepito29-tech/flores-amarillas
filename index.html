@@ -1,1 +1,122 @@
+<!doctype html>
 
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flores Amarillas — I & L</title>
+  <style>
+    :root{--bg:#f6f7f4;--panel:#f7efcc;--accent:#f6c94d;--green:#235427;--radius:18px;font-family: 'Garamond', 'Times New Roman', serif}
+    html,body{height:100%;margin:0}
+    body{background:linear-gradient(180deg,#dff1f9 0%, #f6f7f4 100%);display:flex;justify-content:center;padding:40px}
+    .wrap{width:100%;max-width:980px;background:var(--panel);border-radius:20px;box-shadow:0 18px 40px rgba(10,20,30,0.08);overflow:hidden}header{background:linear-gradient(180deg,#bfe6f0,#dff1f9);padding:56px 40px;text-align:center;position:relative}
+header h1{font-size:64px;margin:0;color:#6aa84f;letter-spacing:2px;text-transform:capitalize;text-shadow:0 4px 0 rgba(255,255,255,0.35)}
+header .subtitle{color:var(--green);font-size:20px;margin-top:12px}
+
+.content{display:grid;grid-template-columns:1fr 420px;gap:24px;padding:36px}
+.left{padding:18px}
+.card{background:rgba(255,255,255,0.9);padding:24px;border-radius:16px;box-shadow:0 8px 24px rgba(20,30,40,0.06)}
+
+.poem{font-size:20px;color:var(--green);line-height:1.7;text-align:justify;font-style:italic}
+.centered{display:flex;justify-content:center;margin:26px 0}
+
+.video-frame{width:100%;border-radius:14px;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,0.08)}
+
+.right{padding:18px}
+.flower{background:linear-gradient(180deg,#fff,#fffef2);border-radius:12px;padding:18px;text-align:center}
+.initials{display:inline-block;width:88px;height:88px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#f2b94e);font-weight:700;color:#1f1f1f;font-size:28px;line-height:88px}
+.names{margin-top:10px;color:var(--green);font-weight:700}
+
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.tile{height:110px;border-radius:12px;background:linear-gradient(180deg,#fffef2,#fff);display:flex;align-items:center;justify-content:center;color:#6b6b6b}
+
+footer{padding:26px;text-align:center;background:linear-gradient(180deg,rgba(255,255,255,0.4),transparent)}
+
+@media (max-width:920px){.content{grid-template-columns:1fr}.right{order:-1}}
+
+.btn{display:inline-block;padding:12px 20px;border-radius:28px;text-decoration:none;font-weight:700}
+.btn-green{background:var(--green);color:#fff}
+.btn-soft{background:transparent;border:1px solid rgba(0,0,0,0.06)}
+
+.sunflower{position:absolute;right:22px;bottom:-22px;width:180px;height:180px;background:radial-gradient(circle at 50% 50%, #3b2a15 12%, #e58b1b 13%, #ffd23f 45%);border-radius:50%;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+
+  </style>
+</head>
+<body>
+  <div class="wrap" id="page-root">
+    <header>
+      <h1>Flores Amarillas</h1>
+      <div class="subtitle">Para <strong>Luis &amp; Iris</strong> — 20.09.25</div>
+      <div class="sunflower" aria-hidden="true"></div>
+    </header><div class="content">
+  <main class="left">
+    <section class="card">
+      <div style="display:flex;gap:14px;align-items:center">
+        <div style="font-size:14px;color:#6b6b6b">Dedicatoria</div>
+        <div style="margin-left:auto;color:var(--green);font-weight:700">I &amp; L</div>
+      </div>
+
+      <article style="margin-top:18px">
+        <p class="poem">Lo que siento por ti no cabe en un solo párrafo ni en una sola flor. Es como un girasol que crece cada día, buscando siempre tu luz. Eres mi calma cuando el mundo pesa, mi sonrisa en medio del cansancio, mi razón para seguir soñando. Aunque los kilómetros intenten separarnos, lo que siento por ti los atraviesa sin esfuerzo, porque no hay distancia capaz de frenar un amor tan real.</p>
+      </article>
+
+      <div class="centered">
+        <div class="video-frame" style="max-width:720px">
+          <!-- Video de Shrek - Accidentally in Love -->
+          <iframe width="100%" height="405" src="https://www.youtube.com/embed/5Uu3kCEEc98" title="Accidentally in Love - Shrek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:12px;color:#6b6b6b;font-style:italic">(Dale play y activa el audio)</div>
+
+      <div style="margin-top:22px;display:flex;gap:12px;justify-content:center">
+        <a class="btn btn-green" href="#" id="surpriseBtn">Ver sorpresa</a>
+        <a class="btn btn-soft" href="#" id="downloadBtn">Descargar PDF</a>
+      </div>
+
+    </section>
+
+    <section style="margin-top:20px" class="card">
+      <h3 style="margin:0 0 12px 0;color:var(--green)">Más poemas</h3>
+      <p class="poem" style="text-align:center">Dicen que los girasoles buscan al sol, y yo siempre te busco a ti. Aunque no pueda abrazarte todavía, quiero que sepas que en cada amanecer pienso en ti, y en cada noche deseo tus sueños más lindos.</p>
+    </section>
+  </main>
+
+  <aside class="right">
+    <div class="flower card">
+      <div class="initials">I &amp; L</div>
+      <div class="names">Luis &amp; Iris</div>
+      <div style="font-size:13px;color:#6b6b6b;margin-top:8px">Amor que cruza kilómetros</div>
+
+      <div class="gallery" style="margin-top:14px">
+        <div class="tile">Foto 1</div>
+        <div class="tile">Foto 2</div>
+        <div class="tile">Foto 3</div>
+        <div class="tile">Foto 4</div>
+      </div>
+    </div>
+
+    <div style="margin-top:18px;text-align:center;color:#6b6b6b;font-size:14px">Canción especial</div>
+    <div style="margin-top:8px;text-align:center">
+      <!-- Canción romántica: Perfect de Ed Sheeran -->
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0tgVpDi06FyKpA1z0VMD4v" width="100%" height="80" frameborder="0" allow="encrypted-media"></iframe>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div style="font-style:italic;color:var(--green);font-size:18px">Aunque la distancia nos separe, siempre giraré hacia ti, como un girasol al sol.</div>
+</footer>
+
+  </div>  <script>
+    document.getElementById('surpriseBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      alert('Sorpresa 💛\nLuis & Iris para siempre.');
+    });
+
+    document.getElementById('downloadBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      window.print();
+    });
+  </script></body>
+</html>
